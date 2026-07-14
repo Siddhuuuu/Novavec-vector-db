@@ -1,0 +1,16 @@
+.git/
+build/
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+*.hdf5
+*.h5
+
+*_novavec_data/
+novavec_data/
+
+benchmarks/results/*.json
+benchmarks/results/*.png
+
