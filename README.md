@@ -207,6 +207,42 @@ for r in results:
 
 ---
 
+## Docker Deployment
+
+NovaVec is fully containerized and can be deployed as a self-contained vector search service using Docker.
+
+### Build the Image
+
+```bash
+docker build -t novavec .
+```
+
+### Run the Container
+
+```bash
+docker run -p 7860:7860 novavec
+```
+
+### Access the API
+
+Once the container is running:
+
+- **Swagger UI:** http://localhost:7860/docs
+
+### What the Container Does
+
+The Docker image:
+
+- Compiles the C++20 vector search engine
+- Builds the pybind11 Python bindings
+- Installs FastAPI and API dependencies
+- Exposes the REST API on port `7860`
+- Launches the service using Uvicorn
+
+This allows NovaVec to be deployed and evaluated without requiring a local C++ toolchain or Python environment setup.
+
+---
+
 ## Benchmarking Against ANN-Benchmark Datasets
 
 ```bash
