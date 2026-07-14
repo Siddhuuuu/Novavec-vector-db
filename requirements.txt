@@ -1,0 +1,28 @@
+# NovaVec Python dependencies — all versions pinned for reproducibility
+# Install: pip install -r requirements.txt
+
+# ---- Web API ------------------------------------------------
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
+pydantic==2.7.1
+pydantic-settings==2.3.4
+
+# ---- Numerical / ML ----------------------------------------
+numpy==1.26.4
+sentence-transformers==3.0.1
+torch==2.3.1
+transformers==4.41.2
+
+# ---- Datasets (for Wikipedia ingestion demo) ---------------
+datasets==2.20.0
+
+# ---- LLM clients (RAG demo) --------------------------------
+openai==1.35.3
+ollama==0.2.1
+
+# ---- Observability -----------------------------------------
+prometheus-client==0.20.0
+
+# ---- Benchmarking / visualization --------------------------
+matplotlib==3.9.0
+h5py==3.11.0

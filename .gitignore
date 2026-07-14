@@ -1,0 +1,46 @@
+# Build artifacts
+build/
+cmake-build-*/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+.venv/
+env/
+*.egg-info/
+dist/
+*.egg
+
+# Compiled C++ extension
+*.so
+*.dylib
+*.dll
+
+# NovaVec data directories
+*_novavec_data/
+novavec_data/
+
+# Benchmark results (generated — not committed)
+benchmarks/results/*.json
+benchmarks/results/*.png
+
+# HDF5 benchmark datasets (large — download separately)
+*.hdf5
+*.h5
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Secrets
+.env
+*.key
