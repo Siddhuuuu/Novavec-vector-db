@@ -35,6 +35,8 @@ On the ANN-Benchmarks SIFT-1M dataset (1,000,000 vectors, 128 dimensions), NovaV
 
 The results show the expected HNSW tradeoff between recall and throughput. The operating point used throughout the project is **ef_search=200**, which achieves **99.54% Recall@10** while maintaining **2,260 queries/sec** and **sub-millisecond p99 latency**.
 
+![Recall-Latency Pareto Curve](images/pareto_curve.png)
+
 ## 2. Index Comparison
 
 **Dataset:** SIFT-1M (1,000,000 vectors)
@@ -44,6 +46,7 @@ The results show the expected HNSW tradeoff between recall and throughput. The o
 | HNSW | 0.9954 | 2,260 | 0.58 ms |
 | IVF | 0.9977 | 82.2 | 19.50 ms |
 | Flat (Exact Search) | 0.9992 | 31.1 | 38.92 ms |
+
 
 Among NovaVec's current index implementations, HNSW provides the strongest recall-throughput tradeoff, delivering near-exact recall while maintaining several orders of magnitude higher throughput than brute-force search.
 
